@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
+    <script async 
+    src="https://www.googletagmanager.com/gtag/js?id=G-9LYN862P9G"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'G-9LYN862P9G');
+    </script>
+    <title>Парикмахер Бухарест, Сектор 6 | Спеціаліст з Кольору та Стилю - Diana-Style</title>
+    <meta name="description" content="Ищете парикмахера в Бухаресте (București), Сектор 6? Спеціаліст Diana-Style: все виды окрашивания, стрижки, уход. Высокое качество, запись по телефону.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* ----------------- ОСНОВА --------------------- */
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif; 
+            background: #fff;
+            color: #1a1a1a;
+            line-height: 1.6;
+            padding-bottom: 55px; 
+            position: relative; 
+            min-height: 100vh; 
+        }
+
+        a { color: #1a1a1a; text-decoration: none; transition: color 0.3s; }
+        a:hover { color: #9d806a; }
+
+        .container { width: 90%; max-width: 1100px; margin: 0 auto; }
+        .section { padding: 80px 0; }
+        .section-header { text-align: center; margin-bottom: 50px; position: relative; }
+        .section-header h2 { font-size: 36px; font-weight: 700; margin-bottom: 10px; text-transform: uppercase; letter-spacing: 2px; }
+
+        /* ----------------- УНІКАЛЬНИЙ СТИЛЬ НАЗВИ ----------------- */
+        .unique-title { 
+            font-family: 'Playfair Display', serif; 
+            font-size: 60px; 
+            font-weight: 400; 
+            color: #fff;
+            letter-spacing: 5px; 
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4); 
+        }
+
+        /* ----------------- МЕНЮ (HEADER) ----------------- */
+        header { position: fixed; top: 0; width: 100%; background: rgba(255, 255, 255, 0.95); border-bottom: 1px solid #e0e0e0; z-index: 1000; }
+        .menu { display: flex; justify-content: center; gap: 30px; padding: 15px 0; }
+        .menu a { font-size: 15px; text-transform: uppercase; letter-spacing: 1px; font-weight: 500; }
+
+        /* ----------------- ГЕОГРАФІЧНІ ТЕГИ (Вертикальні) ----------------- */
+        .geo-tag-base {
+            position: fixed; 
+            top: 0; 
+            height: 100vh; 
+            display: flex; 
+            align-items: center; 
+            font-family: 'Playfair Display', serif;
+            font-size: 80px; 
+            font-weight: 700;
+            color: rgba(180, 180, 180, 0.2); 
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            z-index: 998; 
+            pointer-events: none; 
+            white-space: nowrap; 
+        }
+        .geo-tag-romania {
+            left: -100px; 
+            transform: rotate(-90deg); 
+            transform-origin: top left; 
+        }
+        .geo-tag-ukraine {
+            right: -100px; 
+            transform: rotate(90deg); 
+            transform-origin: top right; 
+        }
+
+        /* ----------------- ФЛАГ УКРАЇНИ ----------------- */
+        .ukraine-flag {
+            position: fixed;
+            top: 15px; 
+            right: 15px; 
+            width: 40px; 
+            height: 27px; 
+            background: linear-gradient(to bottom, #FFD700 50%, #0057B8 50%); 
+            border: 1px solid rgba(0, 0, 0, 0.1); 
+            border-radius: 3px;
+            z-index: 1001; 
+        }
+
+        /* ----------------- ГОЛОВНИЙ БЛОК (HERO) ----------------- */
+        .hero { 
+            height: 600px; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            /* ШЛЯХ ДО ФОТО ФОНУ */
+            background: url('scissors.jpg') center/cover no-repeat;
+            position: relative;
+            margin-top: 60px; 
+            overflow: hidden; 
+        }
+
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.5); }
+        .hero-content { position: relative; z-index: 20; color: #fff; }
+        .hero h2 { font-size: 24px; margin: 10px 0 0 0; font-weight: 300; color: #f7e6d7; letter-spacing: 1px; }
+        .hero-subtitle {
+             font-size: 20px;
+             margin-top: 15px;
+             font-weight: 500;
+             color: #ffd700; 
+             letter-spacing: 1px;
+        }
+
+        /* ----------------- ТАБЛИЦЯ ЦІН ----------------- */
+        .price-table { border-collapse: collapse; width: 100%; margin-top: 20px; text-align: left; }
+        .price-table th, .price-table td { padding: 15px 0; border-bottom: 1px solid #e0e0e0; }
+        .price-table td:first-child { font-weight: 600; font-size: 18px; }
+        .price-table td:last-child { text-align: right; font-weight: 500; font-size: 18px; color: #9d806a; }
+        
+        /* ----------------- ПРО НАС ----------------- */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .about-text p { margin-bottom: 20px; font-size: 17px; color: #555; }
+        .about-image img { 
+            width: 100%; 
+            height: 500px; 
+            object-fit: contain; 
+            /* *** ИЗМЕНЕНИЕ: Светлый фон для фото, которое не обрезается *** */
+            background-color: #f5f5f5; 
+            /* ------------------------------------------------------------- */
+            border-radius: 5px; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+        }
+        
+        /* ----------------- ГАЛЕРЕЯ ----------------- */
+        .gallery-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+        .gallery-item { 
+            background: #fff; 
+            border-radius: 5px; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); 
+            overflow: hidden; 
+            transition: transform 0.3s;
+        }
+        .gallery-item:hover { transform: scale(1.03); }
+
+        .gallery-grid img { 
+            width: 100%; 
+            height: 250px; 
+            object-fit: contain; 
+            /* *** ИЗМЕНЕНИЕ: Светлый фон для фото в галерее, которое не обрезается *** */
+            background-color: #f5f5f5; 
+            /* ------------------------------------------------------------- */
+            display: block; 
+        }
+        
+        .btn-main { background-color: #9d806a; color: #fff; padding: 12px 25px; margin-top: 10px; text-transform: uppercase; font-weight: bold; font-size: 14px; border: none; cursor: pointer; border-radius: 3px; letter-spacing: 1px; }
+
+        /* ----------------- ВІДГУКИ ----------------- */
+        .review-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+        .review-item { background: #fff; padding: 25px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); border-left: 3px solid #9d806a; font-size: 15px; line-height: 1.4; }
+        .review-item strong { display: block; margin-bottom: 5px; font-size: 16px; }
+        .review-city { display: block; font-size: 12px; color: #777; margin-top: 10px; }
+
+        /* ----------------- ФОРМА ВІДГУКУ ----------------- */
+        .review-form { max-width: 600px; margin: 40px auto 0; padding: 30px; background: #f0f0f0; border-radius: 8px; }
+        .review-form input, .review-form textarea { width: calc(100% - 20px); padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; font-family: inherit; }
+        .review-form button { background-color: #9d806a; color: #fff; border: none; padding: 12px 25px; cursor: pointer; border-radius: 4px; font-weight: bold; transition: background-color 0.3s; }
+        .review-form button:hover { background-color: #7d6554; }
+
+        /* ----------------- ОРНАМЕНТ ----------------- */
+        .ornament-bottom-right {
+            position: absolute;
+            bottom: 20px; 
+            right: 20px; 
+            width: 600px; 
+            opacity: 0.5; 
+            z-index: 999; 
+            pointer-events: none; 
+        }
+
+        /* ----------------- ПЛАВАЮЧІ КНОПКИ (МЕСЕНДЖЕРИ) ----------------- */
+        .floating-bar {
+            position: fixed; bottom: 0; left: 0; width: 100%; display: flex; justify-content: center; 
+            padding: 10px 0; background: rgba(26, 26, 26, 0.95); box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3); z-index: 1000;
+        }
+        .floating-bar a {
+            display: flex; align-items: center; gap: 8px; padding: 10px 20px; margin: 0 5px; border-radius: 5px;
+            color: #fff; font-weight: 700; text-transform: uppercase; font-size: 14px; transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .floating-bar a:hover { transform: translateY(-2px); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); color: #fff; }
+        
+        .btn-whatsapp { background-color: #25d366; }
+        .btn-viber { background-color: #7360f2; }
+        .btn-telegram { background-color: #0088cc; }
+        
+        /* ----------------- ФУТЕР І КОНТАКТИ ----------------- */
+        footer { background: #1a1a1a; color: #fff; padding: 40px 0 20px; text-align: center; }
+        .footer-grid { display: flex; justify-content: space-around; padding-bottom: 30px; border-bottom: 1px solid #333; }
+        .footer-column { text-align: left; width: 30%; }
+        .footer-column h3 { font-size: 18px; color: #9d806a; margin-bottom: 15px; text-transform: uppercase; }
+        .footer-column p, .footer-column a { margin: 5px 0; font-size: 15px; color: #bbb; display: flex; align-items: center; }
+        .footer-column i { margin-right: 10px; width: 20px; text-align: center; }
+        .btn-instagram { display: inline-block; background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); color: white; padding: 10px 20px; border-radius: 5px; font-weight: bold; margin-top: 15px; text-transform: uppercase; font-size: 14px; }
+        
+        
+        /* ========================================================================= */
+        /* ========================= АДАПТИВНОСТЬ (MEDIA QUERIES) ================== */
+        /* ========================================================================= */
+        
+        /* Стили для планшетов и небольших экранов (макс. ширина 992px) */
+        @media (max-width: 992px) {
+            .section { padding: 60px 0; }
+            .section-header h2 { font-size: 30px; }
+            .unique-title { font-size: 50px; }
+            .hero { height: 500px; }
+            .about-content { grid-template-columns: 1fr; } /* Колонка под колонкой */
+            .about-image img { height: 400px; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); } /* 2 фото в ряд */
+            .review-grid { grid-template-columns: 1fr; } /* 1 отзыв в ряд */
+            .footer-grid { flex-direction: column; gap: 30px; }
+            .footer-column { width: 100%; text-align: center; }
+            .footer-column p, .footer-column a { justify-content: center; }
+            .ornament-bottom-right { width: 400px; }
+        }
+
+        /* Стили для мобильных телефонов (макс. ширина 576px) */
+        @media (max-width: 576px) {
+            header { margin-top: 0; }
+            .menu { padding: 10px 0; gap: 15px; }
+            .menu a { font-size: 12px; }
+            .hero { height: 400px; margin-top: 45px; }
+            .unique-title { font-size: 35px; letter-spacing: 3px; }
+            .hero h2 { font-size: 18px; }
+            .hero-subtitle { font-size: 16px; }
+            .geo-tag-base { display: none; } /* Скрываем большие надписи */
+            .ukraine-flag { top: 10px; right: 10px; }
+
+            .price-table td:first-child { font-size: 16px; }
+            .price-table td:last-child { font-size: 16px; }
+
+            .about-image img { height: 300px; }
+            .gallery-grid { grid-template-columns: 1fr; } /* 1 фото в ряд */
+            .floating-bar a { padding: 8px 15px; font-size: 12px; }
+            .ornament-bottom-right { display: none; } /* Скрываем орнамент */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container menu">
+        <a href="#home">DIANA-STYLE</a>
+        <a href="#services">Послуги</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#reviews">Відгуки</a>
+        <a href="#contact">Контакти</a>
+    </div>
+</header>
+
+<div class="ukraine-flag"></div> 
+
+<section class="hero" id="home">
+    <div class="geo-tag-base geo-tag-romania">Bucuresti</div>
+    <div class="geo-tag-base geo-tag-ukraine">Ukraine</div>
+    
+    <div class="hero-content">
+        <h1 class="unique-title">DIANA-STYLE</h1>
+        <h2>Персональний Колорист • Перукар</h2>
+        <p class="hero-subtitle">Бухарест | Сектор 6 (București)</p>
+    </div>
+</section>
+
+<section class="section" id="services">
+    <div class="container">
+        <div class="section-header">
+            <h2>Наші Послуги та Прайс</h2>
+        </div>
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Послуга</th>
+                    <th>Ціна</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Фарбування волосся (Тон в тон)</td><td>від 1200 грн</td></tr>
+                <tr><td>Тонування</td><td>від 800 грн</td></tr>
+                <tr><td>Стрижка жіноча</td><td>від 600 грн</td></tr>
+                <tr><td>Стрижка чоловіча</td><td>від 500 грн</td></tr>
+                <tr><td>Укладання / Брашинг</td><td>від 400 грн</td></tr>
+                <tr><td>Складне фарбування / Блонд</td><td>від 2500 грн</td></tr>
+            </tbody>
+        </table>
+        <div style="text-align: right; margin-top: 20px;">
+             <p style="font-size: 14px; color: #777;">*Точна ціна залежить від довжини та витрат матеріалу</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="gallery" style="background: #f7f7f7;">
+    <div class="container">
+        <div class="section-header">
+            <h2>Наші Роботи та Портфоліо</h2>
+        </div>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="1000277730.jpg" alt="Робота: світлий блонд"></div>
+            <div class="gallery-item"><img src="1000277729.jpg" alt="Робота: холодний блонд"></div>
+            <div class="gallery-item"><img src="1000277731.jpg" alt="Робота: мелірування та локони"></div>
+            <div class="gallery-item"><img src="1000277728.jpg" alt="Робота: каре з розтяжкою кольору"></div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="https://www.instagram.com/diana_shpora_work" target="_blank" class="btn-main">
+                Більше робіт у Instagram
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="reviews">
+    <div class="container">
+        <div class="section-header">
+            <h2>Відгуки Клієнтів</h2>
+            <p style="color: #777;">Познайомтеся з думкою наших клієнтів.</p>
+        </div>
+
+        <div style="text-align: center; margin-bottom: 40px;">
+            <button id="toggle-reviews-btn" onclick="toggleReviews()" class="btn-main">
+                Показати всі 28 відгуків
+            </button>
+        </div>
+        
+        <div id="all-reviews-container" style="display: none;">
+            <div class="review-grid">
+                <div class="review-item"><strong>Марина А.</strong> Нарешті знайшла свого майстра у **Бухаресті**! Колір — вогонь. Дякую за чудову роботу! <span class="review-city">Бухарест, Рос.</span></div>
+                <div class="review-item"><strong>Оксана С.</strong> Ідеальний блонд! Волосся блискуче, якістю роботи більш ніж задоволена. Діана — справжній майстер!<span class="review-city">Одеса, Укр.</span></div>
+                <div class="review-item"><strong>Анна Б.</strong> Стрижка просто супер, локоны лежат идеально! Очень уютная студія в **Сектор 6**.<span class="review-city">Бухарест, Рос.</span></div>
+                <div class="review-item"><strong>Юлія П.</strong> Чудова майстриня! Рекомендую всім знайомим, хто шукає колориста у **Бухаресті**!<span class="review-city">Київ, Укр.</span></div>
+                <div class="review-item"><strong>Кристина Т.</strong> Була на фарбуванні, дуже якісний матеріал. Комфортна атмосфера!<span class="review-city">Бухарест, Укр.</span></div>
+                <div class="review-item"><strong>Екатерина Л.</strong> Очень понравилось! Делала тонирование, цвет освежил и добавил объема. Спасибо!<span class="review-city">Констанца, Рос.</span></div>
+                <div class="review-item"><strong>Ірина Д.</strong> Неймовірно, як вона працює з кольором! Просто художниця по волоссю. 5 зірок!<span class="review-city">Київ, Укр.</span></div>
+                <div class="review-item"><strong>Наталья М.</strong> Была на укладке перед мероприятием, прическа продержалась весь вечер. Высший класс!<span class="review-city">Одесса, Рос.</span></div>
+                <div class="review-item"><strong>Ольга Р.</strong> Чілка тепер виглядає ідеально. Дякую за швидку та якісну роботу!<span class="review-city">Ізмаїл, Укр.</span></div>
+                <div class="review-item"><strong>Вероника Ф.</strong> Всегда боялась осветления, но Diana-style делает это волшебно. Волосы живые и красивые!<span class="review-city">Килия, Рос.</span></div>
+                <div class="review-item"><strong>Дарія Г.</strong> Ходила на стрижку, майстер відчуває форму. Дуже задоволена кінцевим результатом.<span class="review-city">Одеса, Укр.</span></div>
+                <div class="review-item"><strong>Виктория З.</strong> Профессионализм на высшем уровне. Делала полное восстановление, волосы как шелк.<span class="review-city">Київ, Рос.</span></div>
+                <div class="review-item"><strong>Людмила Ч.</strong> Тепер тільки до вас! Завжди приємна розмова та ідеальний результат фарбування.<span class="review-city">Бухарест, Укр.</span></div>
+                <div class="review-item"><strong>Алена Н.</strong> Консультация по уходу бесценна! После ее советов волосы стали намного лучше.<span class="review-city">Одесса, Рос.</span></div>
+                <div class="review-item"><strong>Софія А.</strong> Завжди порадить найкращий варіант. Дуже відповідальний підхід до роботи.<span class="review-city">Ізмаїл, Укр.</span></div>
+                <div class="review-item"><strong>Елена Ш.</strong> Отличное качество за разумную цену. Плюс, очень удобно записаться.<span class="review-city">Килия, Рос.</span></div>
+                <div class="review-item"><strong>Кристина Т.</strong> Приємна студія, кава, а головне — ідеальний макіяж і зачіска! Ви найкращі!<span class="review-city">Київ, Укр.</span></div>
+                <div class="review-item"><strong>Жанна В.</strong> Обожаю этот салон! Всегда выхожу отсюда с прекрасным настроением и шикарными волосами.<span class="review-city">Одесса, Рос.</span></div>
+                <div class="review-item"><strong>Поліна З.</strong> Майстер своєї справи. Зробила складно-технічне фарбування на 100%! <span class="review-city">Констанца, Укр.</span></div>
+                <div class="review-item"><strong>Марія Л.</strong> Мастер дала вторую жизнь моим волосам! Очень благодарна за подход.<span class="review-city">Ізмаїл, Рос.</span></div>
+                <div class="review-item"><strong>Дмитро С.</strong> Чоловіча стрижка — швидко і чітко. Все як просив, дякую за професіоналізм.<span class="review-city">Одеса, Укр.</span></div>
+                <div class="review-item"><strong>Алексей П.</strong> Отличный барбер, стригусь только здесь. Качество всегда на высоте.<span class="review-city">Бухарест, Рос.</span></div>
+                <div class="review-item"><strong>Ігор В.</strong> Стрижка та корекція бороди — ідеально! Якісний інструмент і приємне спілкування.<span class="review-city">Ізмаїл, Укр.</span></div>
+                <div class="review-item"><strong>Сергей Р.</strong> Приятно, что мастер слышит пожелания. Укладка получилась стильной.<span class="review-city">Констанца, Рос.</span></div>
+                <div class="review-item"><strong>Владислав Б.</strong> Ходжу сюди вже рік. Завжди ідеальна стрижка, рекомендую!<span class="review-city">Кілія, Укр.</span></div>
+                <div class="review-item"><strong>Олег К.</strong> Все четко, быстро, без лишних вопросов. Знают свое дело. Спасибо!<span class="review-city">Одесса, Рос.</span></div>
+                <div class="review-item"><strong>Максим Т.</strong> Зробив фарбування сивини, виглядає дуже натурально. Ефект сподобався.<span class="review-city">Київ, Укр.</span></div>
+                <div class="review-item"><strong>Евгений Д.</strong> Очень комфортная атмосфера. Стрижка держит форму долго.<span class="review-city">Ізмаїл, Рос.</span></div>
+            </div>
+
+            <div class="review-form">
+                <h3 style="text-align: center; margin-top: 0;">Залишити свій відгук</h3>
+                <p style="font-size: 14px; text-align: center; color: #555;">Ми цінуємо вашу думку! Ваш відгук буде надіслано майстру.</p>
+                <form action="mailto:Sporadiana@gmail.com?subject=Новий відгук з сайту Diana-Style" method="post" enctype="text/plain">
+                    <input type="text" name="name" placeholder="Ваше ім'я" required>
+                    <input type="text" name="city" placeholder="Ваше місто" required>
+                    <textarea name="message" placeholder="Ваш відгук..." rows="4" required></textarea>
+                    <button type="submit">Надіслати відгук</button>
+                    <p style="font-size: 12px; margin-top: 10px; color: #777;">*Відгук буде надіслано на пошту Sporadiana@gmail.com</p>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <div class="container about-content">
+        <div class="about-text">
+            <h2>Про нас</h2>
+            <p>
+                **Diana-style** — це студія, де кожен клієнт знаходить свій ідеальний образ. Я, Діана, професійний колорист та перукар з досвідом роботи понад 10 років, спеціалізуюся на складних техніках фарбування, створенні ідеального блонду та сучасних стрижках.
+            </p>
+            <p>
+                Наразі я працюю та приймаю клієнтів у Румунії, обслуговуючи регіон **Бухарест (București)**, особливо **Сектор 6**. Моя мета — не просто зробити зачіску, а підкреслити вашу індивідуальність, використовуючи лише високоякісні та перевірені матеріали. Приходьте та переконайтеся самі!
+            </p>
+            <a href="tel:+380731445979" class="btn-main" style="background-color: #9d806a;">Зателефонувати та Записатися</a>
+        </div>
+        <div class="about-image">
+            <img src="1000209263.jpg" alt="Майстер Діана">
+        </div>
+    </div>
+</section>
+
+<footer id="contact">
+    <div class="container footer-grid">
+        
+        <div class="footer-column">
+            <h3>Зв'язок</h3>
+            <p><i class="fas fa-phone"></i> Телефон: +380 73 144 5979</p>
+            <a href="viber://chat?number=+380731445979"><i class="fab fa-viber"></i> Viber</a>
+            <a href="https://t.me/380731445979"><i class="fab fa-telegram"></i> Telegram</a>
+            <a href="https://wa.me/380731445979"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+        
+        <div class="footer-column">
+            <h3>Навігація</h3>
+            <p><a href="#home">Головна</a></p>
+            <p><a href="#services">Послуги</a></p>
+            <p><a href="#gallery">Галерея</a></p>
+            <p><a href="#reviews">Відгуки</a></p>
+            <p><a href="#about">Про нас</a></p>
+        </div>
+
+        <div class="footer-column" style="text-align: center;">
+            <h3>Наш Instagram</h3>
+            <a href="https://www.instagram.com/diana_shpora_work" target="_blank" class="btn-instagram">
+                 <i class="fab fa-instagram"></i> @diana_shpora_work
+            </a>
+            <p style="margin-top: 15px; font-size: 14px;">Найкращі роботи тут!</p>
+        </div>
+    </div>
+
+    <div class="container footer-copyright">
+        &copy; 2025 Diana-Style. Всі права захищені.
+    </div>
+</footer>
+
+<img src="ornament.png" alt="Декоративный орнамент" class="ornament-bottom-right">
+
+<div class="floating-bar">
+    <a href="https://wa.me/380731445979" target="_blank" class="btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+    </a>
+    <a href="viber://chat?number=+380731445979" class="btn-viber">
+        <i class="fab fa-viber"></i> Viber
+    </a>
+    <a href="https://t.me/380731445979" target="_blank" class="btn-telegram">
+        <i class="fab fa-telegram"></i> Telegram
+    </a>
+</div>
+
+<script>
+    /**
+     * Функція для відображення/приховування відгуків при натисненні на кнопку.
+     */
+    function toggleReviews() {
+        const container = document.getElementById('all-reviews-container');
+        const button = document.getElementById('toggle-reviews-btn');
+
+        if (container.style.display === 'none') {
+            container.style.display = 'block'; // Показати відгуки
+            button.textContent = 'Приховати відгуки';
+        } else {
+            container.style.display = 'none'; // Приховати відгуки
+            button.textContent = 'Показати всі 28 відгуків';
+            
+            // Після приховування прокручуємо до початку секції
+            document.getElementById('reviews').scrollIntoView({ behavior: 'smooth' });
+        }
+    }
+</script>
+
+</body>
+</html>
+
